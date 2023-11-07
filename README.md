@@ -16,4 +16,4 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 pip install flake8
 ```
 
-Then, in your `~/.bashrc` set `alias vim="nvim -u /path/to/dotfiles/.vimrc`.
+Then, in your `~/.bashrc` set `alias vim="nvim -u /path/to/dotfiles/.vimrc`. Open `vim` and run `:PlugInstall`
