@@ -5,7 +5,7 @@ Downloading neovim:
 ```bash
 wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
 chmod u+x nvim.appimage
-echo "$PWD:$PATH" >> ~/.bashrc
+echo PATH="$PWD:$PATH" >> ~/.bashrc
 source ~/.bashrc
 
 ```
