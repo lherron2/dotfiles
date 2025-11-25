@@ -1,0 +1,21 @@
+# ~/dotfiles/bash/.bash_common
+
+# --- Navigation ---
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# --- Vim ---
+alias v='vim'
+alias svi='sudo vim'
+
+# --- Git Shortcuts ---
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit -m'
+alias gp='git push'
+
+# --- Custom Prompt (Optional: identifies which machine you are on) ---
+export PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
