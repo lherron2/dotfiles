@@ -5,7 +5,7 @@ set nocompatible            " Disable vi compatibility
 set number                  " Show line numbers
 set relativenumber          " Show relative line numbers (great for jumping)
 set ruler                   " Show cursor position
-set syntax=on               " Enable syntax highlighting
+syntax on               " Enable syntax highlighting
 set clipboard=unnamedplus   " Use system clipboard (requires vim-gtk/features)
 
 " --- Indentation ---

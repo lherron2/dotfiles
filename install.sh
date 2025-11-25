@@ -10,6 +10,7 @@ BACKUP_DIR="$HOME/dotfiles_backup_$(date +%Y%m%d_%H%M%S)"
 FILES_TO_LINK=(
     "vim/.vimrc:.vimrc"
     "bash/.bash_common:.bash_common"
+    "tmux/.tmux.conf:.tmux.conf"
 )
 
 create_symlinks() {
