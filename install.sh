@@ -48,3 +48,20 @@ create_symlinks() {
 }
 
 create_symlinks
+
+# --- Update .bashrc safely ---
+TARGET_RC="$HOME/.bashrc"
+
+# Check if .bashrc already sources .bash_common
+if grep -q "source ~/.bash_common" "$TARGET_RC"; then
+    echo "Skipping: .bash_common is already sourced in $TARGET_RC"
+else
+    echo "Appending source command to $TARGET_RC..."
+    cat <<EOT >> "$TARGET_RC"
+
+# --- Load Common Dotfiles ---
+if [ -f ~/.bash_common ]; then
+    source ~/.bash_common
+fi
+EOT
+fi
